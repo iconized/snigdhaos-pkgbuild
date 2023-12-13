@@ -1,0 +1,24 @@
+
+#Maintainer: Eshan Roy <src.eshan@gmail.com>
+
+pkgname=snigdhaos-fish-config
+org=snigdhalinux
+pkgver=1.0.0
+pkgrel=3
+pkgdesc="Snigdha OS Fish Config!"
+arch=('any')
+license=("GPL3")
+depends=('fish' 'zoxide')
+groups=('snigdhaos')
+conflicts=('snigdhaos-fish-config')
+url="https://github.com/$org/$pkgname"
+source=("$pkgname.tar.gz")
+sha256sums=('SKIP')
+
+package() {
+  mkdir -p "${pkgdir}/etc/skel/.config"
+
+  cp -rf "${srcdir}/etc/skel/.config/fish" "${pkgdir}/etc/skel/.config/"  
+}
+
+
