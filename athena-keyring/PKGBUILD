@@ -1,0 +1,19 @@
+
+#Maintainer: Eshan Roy <src.eshan@gmail.com>
+
+pkgname=snigdhaos-keyring
+org=snigdhalinux
+url="https://github.com/$org/$pkgname"
+pkgver=1.0.0
+pkgrel=1
+pkgdesc="Snigdha OS Keyring"
+arch=('any')
+license=("GPL3")
+source=("$pkgname.tar.gz")
+sha512sums=('SKIP')
+
+package() {
+  mkdir -p "${pkgdir}/usr/share/pacman/keyrings"
+
+  cp -rf "${srcdir}"/usr/share/pacman/keyrings/* "${pkgdir}/usr/share/pacman/keyrings/"
+}
