@@ -13,7 +13,7 @@ groups=('snigdhaos')
 conflicts=('snigdhaos-fish-config')
 url="https://github.com/$org/$pkgname"
 source=("$pkgname.tar.gz")
-sha256sums=('SKIP')
+sha256sums=('64a6d0eaaf01ade19cc71d380f036a410649bf91ee4a7a9c630dc9fc6ad99abe')
 
 package() {
   mkdir -p "${pkgdir}/etc/skel/.config"
