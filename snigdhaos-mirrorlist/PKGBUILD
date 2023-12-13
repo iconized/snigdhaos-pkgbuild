@@ -1,0 +1,21 @@
+
+#Maintainer: Eshan Roy <src.eshan@gmail.com>
+
+pkgname=snigdhaos-mirrorlist
+org=snigdhalinux
+pkgver=1.0.0
+pkgrel=1
+pkgdesc="Snigdha OS mirrorlist."
+arch=('any')
+license=("GPL3")
+backup=('etc/pacman.d/snigdhaos-mirrorlist')
+source=("snigdhaos-mirrorlist")
+groups=('snigdhaos')
+url="https://github.com/$org/$pkgname"
+sha512sums=('16cc6416c6bf5c7713ac4a3f311bc076a3e47831471152d194e2cb16bfd14000bb7c4dc25df6d3988692dadd81767754b430b7f8730caab35efb31a3f1e26b77')
+package() {
+  mkdir -p "$pkgdir/etc/pacman.d"
+  
+  install -Dm 644 -t "$pkgdir/etc/pacman.d/" $pkgname
+}
+
