@@ -11,7 +11,6 @@ license=("GPL3")
 url="https://github.com/$org/$pkgname"
 depends=('alacritty' 'ttf-firacode')
 source=("alacritty.yml")
-sha512sums=('SKIP')
 
 package() {
   install -dm 755 "${pkgdir}/etc/skel/.config/alacritty"
@@ -19,3 +18,4 @@ package() {
   install -Dm644 "${srcdir}/alacritty.yml" "${pkgdir}/etc/skel/.config/alacritty/"
 }
 
+sha256sums=('80125a317deaf6ab136cd17c3aad2c7e4bc9d90cba977df83ce59b2a23662001')
