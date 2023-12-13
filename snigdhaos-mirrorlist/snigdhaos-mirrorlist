@@ -1,0 +1,12 @@
+######################################################
+####                                              ####
+####        Snigdha OS Repository Mirrorlist      ####
+####                                              ####
+######################################################
+#### Entry in file /etc/pacman.conf:
+###     [hawkeye]
+###     Include = /etc/pacman.d/snigdhaos-mirrorlist
+######################################################
+## Worldwide
+Server = https://snigdhalinux.github.io/$repo/$arch
+
