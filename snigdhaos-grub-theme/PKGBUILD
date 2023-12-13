@@ -24,5 +24,5 @@ package() {
 	provides=('snigdhaos-grub-theme')
 	cd grub-theme/snigdhaos-live || exit
 	sed -i -e 's,.*text = "Welcome to Snigdha OS".*,#text = "Welcome to Snigdha OS",' theme.txt #remove welcome message
-	find . -exec install -D -m644 {} "${pkgdir}"/usr/share/grub/themes/snigdhaos-grub-theme/{} \;
+	find . -type f -exec install -D -m644 {} "${pkgdir}"/usr/share/grub/themes/snigdhaos-grub-theme/{} \;
 }
