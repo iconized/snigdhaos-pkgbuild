@@ -1,0 +1,21 @@
+
+#Maintainer: Eshan Roy <src.eshan@gmail.com>
+
+pkgname=snigdhaos-alacritty-config
+org=snigdhalinux
+pkgver=1.0.0
+pkgrel=1
+pkgdesc="Snigdha OS Alacritty Config!"
+arch=('any')
+license=("GPL3")
+url="https://github.com/$org/$pkgname"
+depends=('alacritty' 'ttf-firacode')
+source=("alacritty.yml")
+sha512sums=('SKIP')
+
+package() {
+  install -dm 755 "${pkgdir}/etc/skel/.config/alacritty"
+
+  install -Dm644 "${srcdir}/alacritty.yml" "${pkgdir}/etc/skel/.config/alacritty/"
+}
+
