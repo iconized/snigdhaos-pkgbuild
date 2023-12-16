@@ -1,0 +1,21 @@
+
+# Maintainer: Eshan Roy <src.eshan@gmail.com>
+
+pkgname=snigdhaos-zsh-config
+pkgver=1.0.1
+pkgrel=4
+pkgdesc="Snigdha OS ZSH Config"
+arch=('any')
+license=("GPL")
+depends=('zsh' 'zsh-autosuggestions' 'zsh-history-substring-search' 'zsh-syntax-highlighting' 'powerline-fonts')
+source=("$pkgname.tar.gz")
+sha512sums=('SKIP')
+
+package() {
+  mkdir -p "${pkgdir}/etc/skel"
+  mkdir -p "${pkgdir}/usr/bin"
+
+  cp -rf "${srcdir}/etc/skel/.zshrc" "${pkgdir}/etc/skel/"
+  install -Dm 755 "${srcdir}/usr/bin/shopt" "${pkgdir}/usr/bin/"
+}
+
