@@ -1,0 +1,28 @@
+
+# Maintainer: Eshan Roy <src.eshan@gmail.com>
+
+pkgname=snigdhaos-gnome-background
+org=snigdhalinux
+pkgver=r4.4e04501
+pkgrel=1
+pkgdesc="Snigdha OS Gnome Wallpapers"
+arch=('any')
+url="https://github.com/$org/$pkgname"
+license=('GPLv3')
+makedepends=('git')
+source=("git+https://github.com/$org/$pkgname.git")
+sha256sums=('SKIP')
+
+pkgver() {
+	cd "$srcdir/$pkgname" || exit
+	printf "r%s.%s" "$(git rev-list --count HEAD)" "$(git rev-parse --short HEAD)"
+
+}
+
+package() {
+	cd "${pkgname}" || exit
+	install -d "${pkgdir}/usr/share/backgrounds/$pkgname"
+	cp -r src/$pkgname/* "${pkgdir}/usr/share/backgrounds/$pkgname"
+	install -d "${pkgdir}/usr/share/gnome-background-properties"
+	cp -r "src/$pkgname/snigdhaos-gnome-background.xml" "${pkgdir}/usr/share/gnome-background-properties/snigdhaos-gnome-background.xml"
+}
