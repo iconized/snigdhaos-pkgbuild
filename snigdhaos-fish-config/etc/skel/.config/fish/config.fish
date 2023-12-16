@@ -4,7 +4,7 @@ end
 
 set -U fish_greeting ""
 
-source ~/.bash_aliases
+source ~/.snigdhaos_bash_aliases
 
 zoxide init fish | source
 
