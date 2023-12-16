@@ -2,7 +2,7 @@
 #Maintainer: Eshan Roy <src.eshan@gmail.com>
 
 pkgname=snigdhaos-neofetch-config
-pkgver=208.c739213
+pkgver=213.3ea7c37
 pkgrel=1
 pkgdesc="Snigdha OS Neofetch Config"
 arch=('any')
@@ -14,9 +14,9 @@ source=("git+https://github.com/Chick2D/neofetch-themes"
         "config.conf"
         "neofetch.new")
 sha512sums=('SKIP'
-            'SKIP'
-            'SKIP'
-            'SKIP')
+            '99d7f5d1b359824a8b52c31ca32f0e500c0f9f3a17af51e5e0773d9169cad871b0be15dcd487edbb81bc777743c73aff09770448597e70646af7200808818a9a'
+            'd5e24702e49fd81e41c973654582d7e1bba4495fd2d85b5326b1eb8c9cdb4a4782958feecb95b6d2faa4d59531ca5723bcf13d772cf657461e44b1a57ec895a0'
+            '5d56d17939cde4309cfc7948e25e9d4c0e49ed8fc6ad523c07ebabb915eef9533a19ac2566051680760512209ec7532c31f9d9d21830c22c22abdfd95561100b')
 
 pkgver() {
   cd neofetch-themes
