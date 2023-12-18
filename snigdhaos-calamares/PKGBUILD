@@ -2,6 +2,8 @@
 #Maintainer: Eshan Roy <src.eshan@gmail.com>
 
 pkgname=snigdhaos-calamares
+org=snigdhalinux
+branch=master
 _pkgname=calamares
 pkgver=3.2.62
 pkgrel=2
