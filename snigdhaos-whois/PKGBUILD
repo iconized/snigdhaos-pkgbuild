@@ -1,0 +1,11 @@
+# Maintainer: Eshan Roy <src.eshan@gmail.com>
+
+pkgname=snigdhaos-whois
+org=snigdhalinux
+branch=master
+pkgver=1.0
+pkgrel=1
+pkgdesc="Snigdha OS All whois collection"
+arch=('any')
+license=('GPL3')
+depends=('perl-net-whois-ip' 'python-ipwhois' 'python-python-whois')
