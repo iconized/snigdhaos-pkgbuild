@@ -3,6 +3,7 @@
 
 pkgname=snigdhaos-keyring
 org=snigdhalinux
+branch=master
 url="https://github.com/$org/$pkgname"
 pkgver=1.0.0
 pkgrel=1

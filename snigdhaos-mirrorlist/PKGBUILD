@@ -3,6 +3,7 @@
 
 pkgname=snigdhaos-mirrorlist
 org=snigdhalinux
+branch=master
 pkgver=1.0.0
 pkgrel=1
 pkgdesc="Snigdha OS mirrorlist."

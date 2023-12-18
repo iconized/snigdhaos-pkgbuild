@@ -2,6 +2,8 @@
 #Maintainer: Eshan Roy <src.eshan@gmail.com>
 
 pkgname=snigdhaos-neofetch-config
+org=snigdhalinux
+branch=master
 pkgver=213.3ea7c37
 pkgrel=1
 pkgdesc="Snigdha OS Neofetch Config"
