@@ -3,6 +3,7 @@
 
 pkgname=snigdhaos-gnome-background
 org=snigdhalinux
+branch=master
 pkgver=r7.98dfd6c
 pkgrel=1
 pkgdesc="Snigdha OS Gnome Wallpapers"
