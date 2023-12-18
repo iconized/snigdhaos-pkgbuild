@@ -3,6 +3,7 @@
 
 pkgname=snigdhaos-fish-config
 org=snigdhalinux
+branch=master
 pkgver=1.0.0
 pkgrel=3
 pkgdesc="Snigdha OS Fish Config!"
