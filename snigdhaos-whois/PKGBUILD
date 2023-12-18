@@ -9,9 +9,10 @@ pkgdesc="Snigdha OS All whois collection"
 url="https://github.com/$org/$pkgname"
 arch=('any')
 license=('GPL3')
-depends=('perl-net-whois-ip' 
+depends=(   'perl-net-whois-ip' 
             'python-ipwhois' 
             'python-python-whois' 
             'python-cymruwhois' 
             'python-pywhois' 
-            'python-whois')
+            'python-whois'
+            'whois-git')
