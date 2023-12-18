@@ -1,0 +1,15 @@
+#Maintainer: Eshan Roy <src.eshan@gmail.com>
+
+pkgname=snigdhaos-nmap
+org=snigdhalinux
+branch=master
+pkgver=1.0.0
+pkgrel=1
+pkgdesc="Snigdha OS NMAP Collection"
+url="https://github.com/$org/$pkgname"
+depends=('nmap'
+        'nmap-parse-output'
+        'python-python-nmap'
+        'ruby-ruby-nmap')
+conflicts=()
+groups=()
