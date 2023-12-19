@@ -1,0 +1,21 @@
+
+#Maintainer: Eshan Roy <src.eshan@gmail.com>
+
+pkgname=snigdhaos-nighttab-config
+org=snigdhalinux
+branch=master
+pkgver=1.0.0
+pkgrel=1
+pkgdesc="Snigdha OS brave nighttab config"
+arch=('any')
+license=("GPL")
+url="https://github.com/$org/$pkgname"
+source=("$pkgname.tar.gz")
+sha512sums=('SKIP')
+
+package() {
+  mkdir -p "${pkgdir}/usr/share/nighttab"
+
+  cp -rf "${srcdir}/usr/share/nighttab/snigdhaos-nighttab-config.json" "${pkgdir}/usr/share/nighttab/"
+  
+}
