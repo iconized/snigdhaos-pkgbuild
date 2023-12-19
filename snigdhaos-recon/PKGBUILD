@@ -1,0 +1,18 @@
+# Maintainer: Eshan Roy <src.eshan@gmail.com>
+pkgname=snigdhaos-recon
+org=snigdhalinux
+branch=master
+pkgver=1.0
+pkgrel=1
+arch=('any')
+pkgdesc="Snigdha OS All recon collection"
+license=("GPL")
+url="https://github.com/$org/$pkgname"
+depends=('dnsrecon'
+        'autorecon'
+        'finalrecon'
+        'httprecon'
+        'mdns-recon'
+        'recon-ng')
+conflicts=()
+replaces=()
