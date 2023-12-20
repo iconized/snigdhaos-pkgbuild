@@ -1,30 +1,60 @@
 # Maintainer: Eshan Roy <src.eshan@gmail.com>
 
-pkgname=snigdhaos-gnome-config
-org=snigdhalinux
-_branch=master
-pkgver=1.0.0
+pkgbase=snigdhaos-gnome-config
+_gitname=snigdhaos-gnome-config
+pkgname=(
+    'snigdhaos-gnome-config'
+    )
+pkgver=r3.6c9b23b
 pkgrel=1
 arch=('any')
-url="https://github.com/$org/$pkgname"
+_branch='master'
+url="https://github.com/snigdhalinux/snigdhaos-gnome-config"
 license=('GPL')
-makedepends=('coreutils')
+makedepends=('git')
 source=("git+$url.git#branch=${_branch}")
-sha256sums=('70b581d44bd495b2014f35e44109e4b191488ea73e821091e7a727b04f944076')
-pkgdesc='Snigdha OS Gnome Config'
-install=$pkgname.install
-provides=('snigdhaos-gnome-settings-dev')
-conflicts=('snigdhaos-gnome-settings-dev')
+sha256sums=('SKIP')
 
-package() {
-	install -d "$pkgdir"/etc
-	cp -rf "$srcdir"/$pkgname-$pkgver/etc "$pkgdir"
-	depends=('snigdhaos-gnome-background'
-		'ttf-firacode'
-		'catppuccin-gtk-theme-macchiato'
-		'fluent-icon-theme-git'
-		'gnome-themes-extra'
-		'fluent-cursor-theme-git'
-		'ttf-fira-sans'
-		'ttf-firacode-nerd')
+_install() {
+    if [[ -d $srcdir/$_gitname/$1/etc ]]; then
+        install -d $pkgdir/etc
+        cp -rf $srcdir/$_gitname/$1/etc $pkgdir
+    fi
+
+    if [[ -d $srcdir/$_gitname/$1/usr ]]; then
+        install -d $pkgdir/etc
+        cp -rf $srcdir/$_gitname/$1/usr $pkgdir
+    fi
+    
+    if [[ -d $srcdir/$_gitname/$1/skel ]]; then
+        install -d $pkgdir/etc
+        cp -rf $srcdir/$_gitname/$1/skel $pkgdir/etc
+    fi
+
+}
+
+pkgver() {
+	cd "$srcdir/snigdhaos-gnome-config"
+
+# Git, no tags available
+	printf "r%s.%s" "$(git rev-list --count HEAD)" "$(git rev-parse --short HEAD)"
+
+}
+
+package_snigdhaos-gnome-config() {
+    pkgdesc='Snigdha OS gnome Config'
+    depends=(
+        'kvantum-qt5'
+        'qt5ct'
+        'ttf-firacode'
+		'noto-fonts'
+        'fluent-icon-theme-git'
+        'catppuccin-gtk-theme-macchiato'
+        )
+ 
+    install=snigdhaos-gnome-config.install
+    provides=('snigdhaos-desktop-config')
+    conflicts=('snigdhaos-desktop-config')
+
+    _install ''
 }

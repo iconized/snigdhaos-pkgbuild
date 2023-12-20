@@ -11,7 +11,7 @@ pkgdesc="Snigdha OS Keyring"
 arch=('any')
 license=("GPL3")
 source=("$pkgname.tar.gz")
-sha512sums=('ff7d48a0d62bfdf06959aca3c5a3f7dd96548ac20bb6c7b1ca13f713359887e49299fd606554f076f437609879538d17d8f47b42a9e2270ebb9d0935718baf44')
+sha512sums=('f911292a457968a1a1c02a5b2c1cabcc9d2c490610a5fb032cfcc0e1507cc41350331645cb711754f42bfa921bb296edd7260e3c8357176ab3453b6bf4c19247')
 
 package() {
   mkdir -p "${pkgdir}/usr/share/pacman/keyrings"
