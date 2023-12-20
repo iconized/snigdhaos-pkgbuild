@@ -44,7 +44,7 @@ pkgver() {
 package_snigdhaos-gnome-config() {
     pkgdesc='Snigdha OS gnome Config'
     depends=(
-        'kvantum-qt5'
+        'kvantum-qt5-git'
         'qt5ct'
         'ttf-firacode'
 		'noto-fonts'

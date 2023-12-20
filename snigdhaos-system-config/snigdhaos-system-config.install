@@ -2,8 +2,8 @@ post_install() {
 if systemctl --all --type service | grep -q "virtual-machine-check";then
     systemctl disable virtual-machine-check.service
 fi
-sh /usr/local/bin/arcolinux-lsb-release
-sh /usr/local/bin/arcolinux-os-release
+sh /usr/local/bin/snigdhaos-lsb-release
+sh /usr/local/bin/snigdhaos-os-release
 if [ ! -d /sys/firmware/efi/efivars/ ]; then 
     rm /etc/pacman.d/hooks/grub-install.hook
 fi
@@ -13,8 +13,8 @@ post_upgrade() {
 if systemctl --all --type service | grep -q "virtual-machine-check";then
     systemctl disable virtual-machine-check.service
 fi
-sh /usr/local/bin/arcolinux-lsb-release
-sh /usr/local/bin/arcolinux-os-release
+sh /usr/local/bin/snigdhaos-lsb-release
+sh /usr/local/bin/snigdhaos-os-release
 if [ ! -d /sys/firmware/efi/efivars/ ]; then 
     rm /etc/pacman.d/hooks/grub-install.hook
 fi

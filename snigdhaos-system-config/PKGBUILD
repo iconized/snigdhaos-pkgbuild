@@ -20,7 +20,7 @@ provides=("${pkgname}")
 options=( !strip !emptydirs )
 source=(${pkgname}::"git+https://github.com/snigdhalinux/${_pkgname}")
 sha256sums=('SKIP')
-install='readme.install'
+install=$pkgname.install
 package() {
   install -dm755 "$pkgdir/$_licensedir/$_pkgname"
   install -m644 "$srcdir/$pkgname/LICENSE" "$pkgdir/$_licensedir/$_pkgname"
