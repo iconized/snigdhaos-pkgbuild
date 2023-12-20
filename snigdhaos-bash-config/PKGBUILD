@@ -1,0 +1,34 @@
+
+# Maintainer: Eshan Roy <src.eshan@gmail.com>
+
+pkgname=snigdhaos-bash-config
+_destname1="/etc/skel/"
+_licensedir="/usr/share/snigdhaos/licenses/"
+pkgver=1.0
+pkgrel=01
+pkgdesc="Snigdha OS Bash Config!"
+arch=('any')
+url="https://github.com/snigdhalinux/snigdhaos-bash-config"
+license=('GPL3')
+makedepends=('git' 'most')
+depends=('bash')
+provides=("${pkgname}")
+options=(!strip !emptydirs)
+source=(${pkgname}::"git+https://github.com/snigdhalinux/${pkgname}.git")
+sha256sums=('SKIP')
+install=$pkgname.install
+package() {
+	install -dm755 ${pkgdir}${_licensedir}${pkgname}
+	install -m644  ${srcdir}/${pkgname}/LICENSE ${pkgdir}${_licensedir}${pkgname}
+
+	install -dm755 ${pkgdir}${_destname1}
+	cp -r  ${srcdir}/${pkgname}${_destname1}.bashrc ${pkgdir}${_destname1}
+	# cp -r  ${srcdir}/${pkgname}${_destname1}.conkyrc ${pkgdir}${_destname1}
+	# cp -r  ${srcdir}/${pkgname}${_destname1}.dmrc ${pkgdir}${_destname1}
+	# cp -r  ${srcdir}/${pkgname}${_destname1}.face ${pkgdir}${_destname1}
+	# cp -r  ${srcdir}/${pkgname}${_destname1}.gtkrc-2.0 ${pkgdir}${_destname1}
+	# cp -r  ${srcdir}/${pkgname}${_destname1}.xinitrc ${pkgdir}${_destname1}
+	# cp -r  ${srcdir}/${pkgname}${_destname1}.Xresources ${pkgdir}${_destname1}
+	# cp -r  ${srcdir}/${pkgname}${_destname1}.xsession ${pkgdir}${_destname1}
+	# cp -r  ${srcdir}/${pkgname}${_destname1}.xsessionrc ${pkgdir}${_destname1}
+}
