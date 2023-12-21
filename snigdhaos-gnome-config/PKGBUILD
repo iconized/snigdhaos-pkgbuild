@@ -5,7 +5,7 @@ _gitname=snigdhaos-gnome-config
 pkgname=(
     'snigdhaos-gnome-config'
     )
-pkgver=r3.6c9b23b
+pkgver=r4.d057667
 pkgrel=1
 arch=('any')
 _branch='master'
