@@ -1,0 +1,14 @@
+# Maintainer Eshan Roy <src.eshan@gmail.com>
+pkgname=snigdhaos-gnome-ui
+pkgver=1.0
+pkgrel=1
+pkgdesc="Snigdha OS Gnome UI"
+arch=('any')
+depends=(
+    'catppuccin-gtk-theme-macchiato'
+    'fluent-icon-theme-git'
+    'bibata-cursor-theme'
+    'ttf-hack'
+)
+conflicts=('snigdhaos-gnome-ui-next')
+replaces=('snigdhaos-gnome-ui-next')
