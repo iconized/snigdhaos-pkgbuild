@@ -1,0 +1,17 @@
+#Maintainer: Eshan Roy <src.eshan@gmail.com>
+pkgname=snigdhaos-xdg-gnome
+pkgver=1.0
+pkgrel=1
+pkgdesc="Snigdha OS Gnome XDG"
+branch=master
+depends=(
+    'xdg-dbus-proxy'
+    'xdg-desktop-portal'
+    'xdg-desktop-portal-gnome'
+    'xdg-desktop-portal-gtk'
+    'xdg-user-dirs'
+    'xdg-user-dirs-gtk'
+    'xdg-utils'
+)
+conflicts=('snigdhaos-xdg-gnome-next')
+replaces=('snigdhaos-xdg-gnome-next')
