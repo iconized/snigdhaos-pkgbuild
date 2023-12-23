@@ -1,0 +1,37 @@
+# Maintainer: Eshan Roy <src.eshan@gmail.com>
+
+pkgname=snigdhaos-gnome-spec
+pkgver=1.0.0
+pkgrel=1
+pkgdesc="Gnome Base Packages For Snigdha OS"
+arch=('any')
+license=('GPL')
+depends=('gnome-autoar' 
+         'gnome-backgrounds' 
+         'gnome-bluetooth-3.0'
+         'gnome-calculator'
+         'gnome-characters'
+         'gnome-color-manager'
+         'gnome-control-center'
+         'gnome-desktop'
+         'gnome-desktop-4'
+         'gnome-desktop-common'
+         'gnome-icon-theme'
+         'gnome-icon-theme-symbolic'
+         'gnome-keyring'
+         'gnome-menus'
+         'gnome-online-accounts'
+         'gnome-session'
+         'gnome-settings-daemon'
+         'gnome-shell'
+         'gnome-shell-extension-arch-update'
+         'gnome-shell-extension-blur-my-shell'
+         'gnome-shell-extension-dash-to-dock'
+         'gnome-shell-extension-gtk4-desktop-icons-ng'
+         'gnome-shell-extension-vitals-git'
+         'gnome-shell-extensions'
+         'gnome-terminal'
+         'gnome-text-editor'
+         'gnome-tweaks')
+conflicts=('snigdhaos-gnome-spec-future')
+replaces=('snigdhaos-gnome-spec-future')
