@@ -3,6 +3,7 @@
 pkgname=snigdhaos-calamares-dependency
 pkgver=1.0
 pkgrel=1
+arch=('any')
 pkgdesc="Calamares Dependency For Snigdha OS"
 branch=master
 depends=(

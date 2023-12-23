@@ -2,6 +2,7 @@
 pkgname=snigdhaos-xdg-gnome
 pkgver=1.0
 pkgrel=1
+arch=('any')
 pkgdesc="Snigdha OS Gnome XDG"
 branch=master
 depends=(
