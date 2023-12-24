@@ -47,8 +47,6 @@ package_snigdhaos-gnome-config() {
         'kvantum-qt5-git'
         'qt5ct'
         'ttf-firacode'
-		'noto-fonts'
-        'noto-fonts-cjk'
         'ttf-hack'
         'fluent-icon-theme-git'
         'catppuccin-gtk-theme-macchiato'
