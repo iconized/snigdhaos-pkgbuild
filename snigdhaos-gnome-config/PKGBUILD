@@ -44,12 +44,10 @@ pkgver() {
 package_snigdhaos-gnome-config() {
     pkgdesc='Snigdha OS gnome Config'
     depends=(
-        'kvantum-qt5-git'
-        'qt5ct'
-        'ttf-firacode'
-        'ttf-hack'
-        'fluent-icon-theme-git'
         'catppuccin-gtk-theme-macchiato'
+        'bibata-cursor-theme'
+        'ttf-firacode'
+        'fluent-icon-theme-git'
         )
  
     install=snigdhaos-gnome-config.install
