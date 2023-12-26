@@ -4,7 +4,7 @@
 pkgname=snigdhaos-bash-config
 _destname1="/etc/skel/"
 _licensedir="/usr/share/snigdhaos/licenses/"
-pkgver=1.0
+pkgver=r1.5730a02
 pkgrel=01
 pkgdesc="Snigdha OS Bash Config!"
 arch=('any')
@@ -17,6 +17,12 @@ options=(!strip !emptydirs)
 source=(${pkgname}::"git+https://github.com/snigdhalinux/${pkgname}.git")
 sha256sums=('SKIP')
 install=$pkgname.install
+
+pkgver() {
+	cd "$srcdir/$pkgname" || exit
+	printf "r%s.%s" "$(git rev-list --count HEAD)" "$(git rev-parse --short HEAD)"
+}
+
 package() {
 	install -dm755 ${pkgdir}${_licensedir}${pkgname}
 	install -m644  ${srcdir}/${pkgname}/LICENSE ${pkgdir}${_licensedir}${pkgname}
