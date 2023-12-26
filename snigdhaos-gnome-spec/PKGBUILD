@@ -1,7 +1,7 @@
 # Maintainer: Eshan Roy <src.eshan@gmail.com>
 
 pkgname=snigdhaos-gnome-spec
-pkgver=1.5.0
+pkgver=r78.d325560
 pkgrel=1
 pkgdesc="Gnome Base Packages For Snigdha OS"
 arch=('any')
@@ -28,3 +28,9 @@ depends=('gnome-autoar'
          'gnome-tweaks')
 conflicts=('snigdhaos-gnome-spec-next')
 replaces=('snigdhaos-gnome-spec-next')
+
+pkgver() {
+	# cd "$srcdir/$pkgname"
+    # Git, no tags available
+	printf "r%s.%s" "$(git rev-list --count HEAD)" "$(git rev-parse --short HEAD)"
+}

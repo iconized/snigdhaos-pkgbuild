@@ -6,7 +6,7 @@ branch=master
 _pkgname=snigdhaos-calamares-config
 _destname="/etc/calamares"
 _licensedir="/usr/share/snigdhaos/licenses/"
-pkgver=9
+pkgver=r76.1076416
 pkgrel=1
 pkgdesc="Snigdha OS Calamares Config"
 arch=('any')
@@ -20,6 +20,15 @@ options=(!strip !emptydirs)
 source=(${_pkgname}::"git+https://github.com/$org/${_pkgname}.git")
 sha256sums=('SKIP')
 install=$pkgname.install
+
+pkgver() {
+	cd "$srcdir/$pkgname"
+
+# Git, no tags available
+	printf "r%s.%s" "$(git rev-list --count HEAD)" "$(git rev-parse --short HEAD)"
+
+}
+
 package() {
 	mkdir -p "${pkgdir}${_licensedir}${_pkgname}"
 	mv "${srcdir}/${_pkgname}/"LICENSE "${pkgdir}${_licensedir}${_pkgname}/LICENSE"

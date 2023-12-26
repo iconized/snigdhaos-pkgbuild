@@ -2,7 +2,7 @@
 
 pkgname=snigdhaos-gnome-shell
 org=snigdhalinux
-pkgver=2.0.0
+pkgver=r78.d325560
 pkgrel=1
 pkgdesc="Snigdha OS Gnome-Shell Requirements"
 arch=('any')
@@ -20,3 +20,9 @@ depends=(
 )
 conflicts=('snigdhaos-gnome-shell-next')
 replaces=('snigdhaos-gnome-shell-next')
+
+pkgver() {
+	# cd "$srcdir/$pkgname"
+    # Git, no tags available
+	printf "r%s.%s" "$(git rev-list --count HEAD)" "$(git rev-parse --short HEAD)"
+}
