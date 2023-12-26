@@ -3,7 +3,7 @@
 pkgname=snigdhaos-icon
 org=snigdhalinux
 pkgdesc="Snigdha OS Ions"
-pkgver=r29.5730a02
+pkgver=r3.1bf0806
 pkgrel=1
 arch=('any')
 url="https://github.com/$org/$pkgname"
