@@ -2,7 +2,7 @@
 #Maintainer: Eshan Roy <src.eshan@gmail.com>
 
 pkgname=snigdhaos-brave-config
-pkgver=1.0.0
+pkgver=2
 pkgrel=1
 pkgdesc="Snigdha OS Brave Config."
 arch=('any')
@@ -10,6 +10,11 @@ license=("GPL")
 depends=('snigdhaos-nighttab-config' 'brave-bin' 'gnome-keyring' 'profile-sync-daemon-brave')
 source=("psd.conf"
         "$pkgname.tar.gz")
+
+pkgver() {
+	cd "$srcdir/$pkgname" || exit
+	printf "r%s.%s" "$(git rev-list --count HEAD)" "$(git rev-parse --short HEAD)"
+}
 
 package() {
   install -dm 755 "${pkgdir}/etc/skel/.config/BraveSoftware"
