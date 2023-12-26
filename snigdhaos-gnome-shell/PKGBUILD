@@ -16,6 +16,7 @@ depends=(
     'gnome-shell-extension-dash-to-dock'
     'gnome-shell-extension-desktop-icons-ng-git'
     'gnome-shell-extension-vitals-git'
+    'gnome-shell-extension-fly-pie-git'
 )
 conflicts=('snigdhaos-gnome-shell-next')
 replaces=('snigdhaos-gnome-shell-next')
