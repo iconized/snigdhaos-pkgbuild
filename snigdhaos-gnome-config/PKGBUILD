@@ -47,6 +47,8 @@ package_snigdhaos-gnome-config() {
         'catppuccin-gtk-theme-macchiato'
         'bibata-cursor-theme'
         'ttf-firacode'
+        'ttf-meslo'
+        'ttf-meslo-nerd-font-powerlevel10k'
         'fluent-icon-theme-git'
         )
  
