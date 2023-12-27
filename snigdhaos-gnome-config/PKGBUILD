@@ -34,7 +34,7 @@ _install() {
 }
 
 pkgver() {
-	cd "$srcdir/snigdhaos-gnome-config"
+	cd "$srcdir/$pkgname"
 
 # Git, no tags available
 	printf "r%s.%s" "$(git rev-list --count HEAD)" "$(git rev-parse --short HEAD)"
@@ -44,6 +44,9 @@ pkgver() {
 package_snigdhaos-gnome-config() {
     pkgdesc='Snigdha OS gnome Config'
     depends=(
+        'snigdhaos-gnome-spec'
+        'snigdhaos-gnome-shell'
+        'snigdhaos-gnome-background'
         'catppuccin-gtk-theme-macchiato'
         'bibata-cursor-theme'
         'ttf-firacode'

@@ -1,14 +1,24 @@
 # Maintainer Eshan Roy <src.eshan@gmail.com>
 pkgname=snigdhaos-gnome-ui
-pkgver=1.0
+pkgver=1
 pkgrel=1
 pkgdesc="Snigdha OS Gnome UI"
 arch=('any')
 depends=(
+    'snigdhaos-gnome-spec'
+    'snigdhaos-gnome-shell'
     'catppuccin-gtk-theme-macchiato'
     'fluent-icon-theme-git'
     'bibata-cursor-theme'
-    'ttf-hack'
+    'ttf-firacode'
 )
 conflicts=('snigdhaos-gnome-ui-next')
 replaces=('snigdhaos-gnome-ui-next')
+
+pkgver() {
+	# cd "$srcdir/$pkgname"
+
+# Git, no tags available
+	printf "r%s.%s" "$(git rev-list --count HEAD)" "$(git rev-parse --short HEAD)"
+
+}

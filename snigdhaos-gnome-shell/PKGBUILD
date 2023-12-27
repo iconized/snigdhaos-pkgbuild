@@ -9,7 +9,7 @@ arch=('any')
 license=("GPL")
 url="https://github.com/$org/$pkgname"
 depends=(
-    'gnome-shell'
+    'snigdhaos-gnome-spec'
     'gnome-shell-extensions'
     'gnome-shell-extension-arch-update'
     'gnome-shell-extension-compiz-windows-effect-git'
