@@ -4,7 +4,7 @@
 pkgname=snigdhaos-nighttab-config
 org=snigdhalinux
 branch=master
-pkgver=r85.137afc2
+pkgver=r87.2647266
 pkgrel=1
 pkgdesc="Snigdha OS brave nighttab config"
 arch=('any')

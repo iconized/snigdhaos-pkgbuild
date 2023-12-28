@@ -12,7 +12,7 @@ license=("GPL3")
 depends=('kitty' 'ttf-firacode')
 source=("$pkgname.tar.gz")
 url="https://github.com/$org/$pkgname"
-sha512sums=('SKIP')
+sha512sums=('e3541e7ba50be272500e9f7ea0912929c8a9e93331392cc132362cd6cb1e26fcf6c5fd4751b559eaf93dc6241a334f8d49dfa5875fb6254584f2bd6d8b30a82a')
 
 package() {
   mkdir -p "${pkgdir}/etc/skel"

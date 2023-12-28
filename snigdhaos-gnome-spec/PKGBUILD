@@ -1,7 +1,7 @@
 # Maintainer: Eshan Roy <src.eshan@gmail.com>
 
 pkgname=snigdhaos-gnome-spec
-pkgver=r86.2634cd5
+pkgver=r87.2647266
 pkgrel=1
 pkgdesc="Gnome Base Packages For Snigdha OS"
 arch=('any')

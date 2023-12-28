@@ -2,7 +2,7 @@
 
 pkgname=snigdhaos-gnome-shell
 org=snigdhalinux
-pkgver=r83.b2de603
+pkgver=r87.2647266
 pkgrel=1
 pkgdesc="Snigdha OS Gnome-Shell Requirements"
 arch=('any')
