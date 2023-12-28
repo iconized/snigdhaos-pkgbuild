@@ -11,7 +11,7 @@ arch=('any')
 license=("GPL")
 url="https://github.com/$org/$pkgname"
 source=("$pkgname.tar.gz")
-sha512sums=('efcf59c3ea5ea35242f8c96f684c80bbcdeae40ac0a298f7aa1efe9c82bef36e2aeda245d80637bf5f4a1ef476063e8a68c94e5edb35fed5115ba11f5703dc7a')
+sha512sums=('77ce341bc702a9cf4dc5a2e76e0f7b76752e67922717c9b6f1b2f31210e9cc1e5ca8dbdbd1b479ae2c525f23cbec3297fbf82621e1d4cd4de255edb4b5e1e7bd')
 
 package() {
   mkdir -p "${pkgdir}/usr/share/nighttab"
