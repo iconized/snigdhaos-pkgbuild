@@ -1,0 +1,31 @@
+
+# Maintainer: Eshan Roy <src.eshan@gmail.com>
+
+pkgname=snigdha-welcome
+_pkgname=snigdha-welcome
+org=snigdhalinux
+_destname1="/etc/skel/.config/"
+_destname2="/usr/"
+_licensedir="/usr/share/snigdha/licenses/"
+pkgver=3
+pkgrel=1
+pkgdesc="Snigdha OS Welcome App"
+arch=('any')
+url="https://github.com/$org/$pkgname"
+license=('GPL3')
+makedepends=('git')
+depends=('libwnck3' 'arandr')
+provides=("${pkgname}")
+conflicts=('snigdhaos-welcome-dev')
+install=$pkgname.install
+options=(!strip !emptydirs)
+source=(${_pkgname}::"git+${url}")
+sha256sums=('SKIP')
+package() {
+	install -dm755 ${pkgdir}${_licensedir}${_pkgname}
+	install -m644  ${srcdir}/${_pkgname}/LICENSE ${pkgdir}${_licensedir}${_pkgname}
+	mkdir -p "${pkgdir}${_destname1}"
+	cp -r "${srcdir}/${_pkgname}/${_destname1}/"* "${pkgdir}${_destname1}"
+	mkdir -p "${pkgdir}${_destname2}"
+	cp -r "${srcdir}/${_pkgname}/${_destname2}/"* "${pkgdir}${_destname2}"
+}
