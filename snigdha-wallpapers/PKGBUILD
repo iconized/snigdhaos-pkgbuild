@@ -24,5 +24,5 @@ package() {
 	install -d "${pkgdir}/usr/share/backgrounds/$pkgname"
 	cp -r src/$pkgname/* "${pkgdir}/usr/share/backgrounds/$pkgname"
 	install -d "${pkgdir}/usr/share/gnome-background-properties"
-	cp -r "src/$pkgname/snigdhaos-wallpapers.xml" "${pkgdir}/usr/share/gnome-background-properties/snigdhaos-wallpapers.xml"
+	cp -r "src/$pkgname/snigdha-wallpapers.xml" "${pkgdir}/usr/share/gnome-background-properties/snigdha-wallpapers.xml"
 }
