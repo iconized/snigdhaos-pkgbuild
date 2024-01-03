@@ -1,0 +1,37 @@
+# Maintainer: Eshan Roy <src.eshan@gmail.com>
+
+pkgname=snigdha-calamares-config
+org=snigdhalinux
+branch=master
+_pkgname=snigdha-calamares-config
+_destname="/etc/calamares"
+_licensedir="/usr/share/snigdha/licenses/"
+pkgver=r89.43616c6
+pkgrel=1
+pkgdesc="Snigdha OS Calamares Config"
+arch=('any')
+url="https://github.com/$org/${_pkgname}"
+license=('GPL3')
+makedepends=('git')
+depends=('snigdha-calamares')
+conflicts=('snigdha-calamares-config-dev' 'snigdhaos-calamares-config-future')
+provides=("${pkgname}")
+options=(!strip !emptydirs)
+source=(${_pkgname}::"git+https://github.com/$org/${_pkgname}.git")
+sha256sums=('SKIP')
+install=$pkgname.install
+
+pkgver() {
+	cd "$srcdir/$pkgname"
+
+# Git, no tags available
+	printf "r%s.%s" "$(git rev-list --count HEAD)" "$(git rev-parse --short HEAD)"
+
+}
+
+package() {
+	mkdir -p "${pkgdir}${_licensedir}${_pkgname}"
+	mv "${srcdir}/${_pkgname}/"LICENSE "${pkgdir}${_licensedir}${_pkgname}/LICENSE"
+	mkdir -p "${pkgdir}${_destname}"
+	cp -r "${srcdir}/${_pkgname}/calamares/"* "${pkgdir}${_destname}"
+}
