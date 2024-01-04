@@ -4,14 +4,14 @@
 pkgname=snigdha-nighttab-config
 org=snigdhalinux
 branch=master
-pkgver=r87.2647266
+pkgver=r105.8512d9c
 pkgrel=1
 pkgdesc="Snigdha OS brave nighttab config"
 arch=('any')
 license=("GPL")
 url="https://github.com/$org/$pkgname"
 source=("$pkgname.tar.gz")
-sha512sums=('77ce341bc702a9cf4dc5a2e76e0f7b76752e67922717c9b6f1b2f31210e9cc1e5ca8dbdbd1b479ae2c525f23cbec3297fbf82621e1d4cd4de255edb4b5e1e7bd')
+sha512sums=('97582c2f98de80e2a9b5f66f4613b98d2e91c6ae99c0dddec92414ee7ab7336aee8f26a403094ff70e37befa43e6cd331d033f176a64e3764f9ff1d0b7cbccc5')
 
 pkgver() {
 	# cd "$srcdir/$pkgname"
