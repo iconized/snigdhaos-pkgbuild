@@ -2,7 +2,7 @@
 
 pkgname=snigdhaos-gnome-shell
 org=snigdhalinux
-pkgver=r87.2647266
+pkgver=r107.a0c31ec
 pkgrel=1
 pkgdesc="Snigdha OS Gnome-Shell Requirements"
 arch=('any')
@@ -16,7 +16,7 @@ depends=(
     'gnome-shell-extension-dash-to-dock'
     'gnome-shell-extension-desktop-icons-ng-git'
     'gnome-shell-extension-vitals-git'
-    'gnome-shell-extension-fly-pie-git'
+    'gnome-shell-extension-tiling-assistant'
 )
 conflicts=('snigdhaos-gnome-shell-next')
 replaces=('snigdhaos-gnome-shell-next')
