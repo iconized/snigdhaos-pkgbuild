@@ -4,7 +4,7 @@
 pkgname=snigdha-wallpapers
 org=snigdhalinux
 branch=master
-pkgver=r4.9ec821a
+pkgver=r7.177faaf
 pkgrel=1
 pkgdesc="Snigdha OS Wallpapers"
 arch=('any')
