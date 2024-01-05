@@ -44,7 +44,7 @@ pkgver() {
 package_snigdhaos-gnome-config() {
     pkgdesc='Snigdha OS gnome Config'
     depends=(
-        'snigdha-gnome-background'
+        'snigdha-wallpapers'
         'catppuccin-gtk-theme-macchiato'
         'bibata-cursor-theme'
         'ttf-firacode'
@@ -53,7 +53,7 @@ package_snigdhaos-gnome-config() {
         'fluent-icon-theme-git'
         )
  
-    install=snigdhaos-gnome-config.install
+    install=snigdha-gnome-config.install
     provides=('snigdhaos-desktop-config')
     conflicts=('snigdhaos-desktop-config')
 
