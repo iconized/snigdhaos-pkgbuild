@@ -41,7 +41,7 @@ pkgver() {
 
 }
 
-package_snigdhaos-gnome-config() {
+package_snigdha-gnome-config() {
     pkgdesc='Snigdha OS gnome Config'
     depends=(
         'snigdha-wallpapers'
