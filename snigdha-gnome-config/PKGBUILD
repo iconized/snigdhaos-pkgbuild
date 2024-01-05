@@ -5,7 +5,7 @@ _gitname=snigdha-gnome-config
 pkgname=(
     'snigdha-gnome-config'
     )
-pkgver=r8.644b21a
+pkgver=r2.04b3694
 pkgrel=1
 arch=('any')
 _branch='master'
