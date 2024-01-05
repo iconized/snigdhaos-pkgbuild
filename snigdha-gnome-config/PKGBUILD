@@ -45,8 +45,8 @@ package_snigdhaos-gnome-config() {
     pkgdesc='Snigdha OS gnome Config'
     depends=(
         'snigdha-wallpapers'
+        'colloid-cursors-git'
         'catppuccin-gtk-theme-macchiato'
-        'bibata-cursor-theme'
         'ttf-firacode'
         'ttf-meslo'
         'ttf-meslo-nerd-font-powerlevel10k'
