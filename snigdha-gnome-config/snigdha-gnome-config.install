@@ -25,6 +25,6 @@ post_upgrade() {
   echo ""
   msg "Done. Please relog to apply changes!"
   echo ""
-  msg "To follow user config changes open up Garuda Assistant & hit apply configs."
+  msg "Eshanized...."
   echo ""
 }
