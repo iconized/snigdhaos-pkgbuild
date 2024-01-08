@@ -1,7 +1,7 @@
 # Maintainer: Eshan Roy <eshan@snigdhaos.org>
 
 pkgname=snigdhaos-wallpapers-badblood
-pkgver=r16.72b2e5a
+pkgver=r2.f2691c8
 pkgrel=1
 pkgdesc="Snigdha OS Bad Blood Wallpapers collection for GNOME"
 arch=('any')
@@ -19,7 +19,7 @@ pkgver() {
 package() {
 	cd "${pkgname}" || exit
 	install -d "${pkgdir}/usr/share/backgrounds/${pkgname}"
-	cp "${srcdir}/${pkgname}/src/${pkgname}"/*.{png,jpg} "${pkgdir}/usr/share/backgrounds/${pkgname}"
+	cp "${srcdir}/${pkgname}/src/${pkgname}"/*.{jpg} "${pkgdir}/usr/share/backgrounds/${pkgname}"
 
 	install -d "${pkgdir}/usr/share/gnome-background-properties"
 	cp "${srcdir}/${pkgname}/src/${pkgname}/${pkgname}.xml" "${pkgdir}/usr/share/gnome-background-properties/snigdhaos-wallpapers-badblood.xml"
