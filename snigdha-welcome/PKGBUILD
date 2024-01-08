@@ -6,8 +6,8 @@ _pkgname=snigdha-welcome
 org=snigdhalinux
 _destname1="/etc/skel/.config/"
 _destname2="/usr/"
-_licensedir="/usr/share/snigdha/licenses/"
-pkgver=3
+_licensedir="/usr/share/snigdhaos/licenses/"
+pkgver=1
 pkgrel=1
 pkgdesc="Snigdha OS Welcome App"
 arch=('any')
@@ -21,6 +21,12 @@ install=$pkgname.install
 options=(!strip !emptydirs)
 source=(${_pkgname}::"git+${url}")
 sha256sums=('SKIP')
+
+pkgver() {
+	cd "$srcdir/$pkgname" || exit
+	printf "r%s.%s" "$(git rev-list --count HEAD)" "$(git rev-parse --short HEAD)"
+}
+
 package() {
 	install -dm755 ${pkgdir}${_licensedir}${_pkgname}
 	install -m644  ${srcdir}/${_pkgname}/LICENSE ${pkgdir}${_licensedir}${_pkgname}
