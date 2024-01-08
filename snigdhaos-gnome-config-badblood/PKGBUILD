@@ -5,7 +5,7 @@ _gitname=snigdhaos-gnome-config-badblood
 pkgname=(
     'snigdhaos-gnome-config-badblood'
     )
-pkgver=1
+pkgver=r3.5ae9153
 pkgrel=1
 arch=('any')
 _branch='master'
