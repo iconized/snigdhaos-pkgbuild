@@ -1,0 +1,26 @@
+# Maintainer: Eshan Roy <eshan@snigdhaos.org>
+
+pkgname=snigdhaos-wallpapers-badblood
+pkgver=r16.72b2e5a
+pkgrel=1
+pkgdesc="Snigdha OS Bad Blood Wallpapers collection for GNOME"
+arch=('any')
+url="https://github.com/snigdhalinux/$pkgname"
+license=('GPLv3')
+makedepends=('git')
+source=("git+https://github.com/snigdhalinux/$pkgname")
+sha256sums=('SKIP')
+
+pkgver() {
+	cd "$srcdir/$pkgname" || exit
+	printf "r%s.%s" "$(git rev-list --count HEAD)" "$(git rev-parse --short HEAD)"
+}
+
+package() {
+	cd "${pkgname}" || exit
+	install -d "${pkgdir}/usr/share/backgrounds/${pkgname}"
+	cp "${srcdir}/${pkgname}/src/${pkgname}"/*.{png,jpg} "${pkgdir}/usr/share/backgrounds/${pkgname}"
+
+	install -d "${pkgdir}/usr/share/gnome-background-properties"
+	cp "${srcdir}/${pkgname}/src/${pkgname}/${pkgname}.xml" "${pkgdir}/usr/share/gnome-background-properties/snigdhaos-wallpapers-badblood.xml"
+}
