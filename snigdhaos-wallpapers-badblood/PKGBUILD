@@ -8,7 +8,7 @@ arch=('any')
 url="https://github.com/snigdhalinux/$pkgname"
 license=('GPLv3')
 makedepends=('git')
-source=("git+https://github.com/snigdhalinux/$pkgname")
+source=("git+https://github.com/snigdhalinux/$pkgname.git")
 sha256sums=('SKIP')
 
 pkgver() {
