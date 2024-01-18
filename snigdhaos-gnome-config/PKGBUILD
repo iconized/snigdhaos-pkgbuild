@@ -35,8 +35,6 @@ _install() {
 
 pkgver() {
 	cd "$srcdir/$pkgname"
-
-# Git, no tags available
 	printf "r%s.%s" "$(git rev-list --count HEAD)" "$(git rev-parse --short HEAD)"
 
 }
