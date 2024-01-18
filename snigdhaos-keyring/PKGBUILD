@@ -10,9 +10,9 @@ url='http:/snigdhaos.org'
 license=('GPL')
 install="${pkgname}.install"
 source=('Makefile'
-        'snigdha.gpg'
-        'snigdha-revoked'
-        'snigdha-trusted')
+        'snigdhaos.gpg'
+        'snigdhaos-revoked'
+        'snigdhaos-trusted')
 validpgpkeys=(
         '620564A6B2D6B0917E9182687A2FF6C5C849D5AC'  # eshan
               )
