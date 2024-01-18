@@ -1,20 +1,27 @@
 
-#Maintainer: Eshan Roy <src.eshan@gmail.com>
+# Maintainer: Eshan Roy <eshan@snigdhaos.org>
 
-pkgname=snigdhaos-keyring
-org=snigdhalinux
-branch=master
-url="https://github.com/$org/$pkgname"
-pkgver=1.0.0
+pkgname=snigdha-keyring
+pkgver=1.0
 pkgrel=1
-pkgdesc="Snigdha OS Keyring"
+pkgdesc='Snigdha OS GPG keyring'
 arch=('any')
-license=("GPL3")
-source=("$pkgname.tar.gz")
-sha512sums=('f5fa3347f8be5c20eb7abdb02d96d2a9720773324612272e089afadd42c60c6a365b16b4fd96f4f31fdf3cb91d8b74165cee6a325ae860f24aba08e4bedd5442')
+url='http:/snigdhaos.org'
+license=('GPL')
+install="${pkgname}.install"
+source=('Makefile'
+        'snigdha.gpg'
+        'snigdha-revoked'
+        'snigdha-trusted')
+validpgpkeys=(
+        '620564A6B2D6B0917E9182687A2FF6C5C849D5AC'  # eshan
+              )
+sha256sums=('SKIP'
+            'SKIP'
+            'SKIP'
+            'SKIP')
 
 package() {
-  mkdir -p "${pkgdir}/usr/share/pacman/keyrings"
-
-  cp -rf "${srcdir}"/usr/share/pacman/keyrings/* "${pkgdir}/usr/share/pacman/keyrings/"
+	cd "${srcdir}"
+	make PREFIX=/usr DESTDIR=${pkgdir} install
 }
