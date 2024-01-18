@@ -20,6 +20,10 @@ options=(!strip !emptydirs)
 source=(${_pkgname}::"git+https://github.com/$org/${_pkgname}.git")
 sha256sums=('SKIP')
 install=$pkgname.install
+pkgver() {
+	# cd "$srcdir/$pkgname"
+	printf "r%s.%s" "$(git rev-list --count HEAD)" "$(git rev-parse --short HEAD)"
+}
 package() {
 	install -dm755 ${pkgdir}${_licensedir}${_pkgname}
 	install -m644  ${srcdir}/${_pkgname}/LICENSE ${pkgdir}${_licensedir}${_pkgname}
