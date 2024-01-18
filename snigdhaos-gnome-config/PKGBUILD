@@ -47,10 +47,10 @@ package_snigdhaos-gnome-config() {
         'snigdhaos-gnome-background'
         'catppuccin-gtk-theme-macchiato'
         'bibata-cursor-theme'
-        'ttf-firacode'
+        'ttf-droid'
         'ttf-meslo'
         'ttf-meslo-nerd-font-powerlevel10k'
-        'fluent-icon-theme-git'
+        'tela-circle-icon-theme-purple'
         )
  
     install=snigdhaos-gnome-config.install
