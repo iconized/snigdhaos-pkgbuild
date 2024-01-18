@@ -1,8 +1,8 @@
 
 # Maintainer: Eshan Roy <eshan@snigdhaos.org>
 
-pkgname=snigdha-keyring
-pkgver=1.0
+pkgname=snigdhaos-keyring
+pkgver=2.0
 pkgrel=1
 pkgdesc='Snigdha OS GPG keyring'
 arch=('any')
