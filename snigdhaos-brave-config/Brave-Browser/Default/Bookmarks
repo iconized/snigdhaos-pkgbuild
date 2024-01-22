@@ -1,9 +1,9 @@
 {
-   "checksum": "14460c338bea82398758b0920af3ed22",
+   "checksum": "63f44463ff5b5d59ed180378fdcd1d9d",
    "roots": {
       "bookmark_bar": {
          "children": [  ],
-         "date_added": "13347713518992296",
+         "date_added": "13350424877801776",
          "date_last_used": "0",
          "date_modified": "0",
          "guid": "0bc5d13f-2cba-5d74-951f-3f233fe6c908",
@@ -12,21 +12,10 @@
          "type": "folder"
       },
       "other": {
-         "children": [ {
-            "date_added": "13347713568335717",
-            "date_last_used": "0",
-            "guid": "6fb96414-f9bb-4494-bf3f-57c4abfdc1c5",
-            "id": "5",
-            "meta_info": {
-               "power_bookmark_meta": ""
-            },
-            "name": "Snigdha OS[HawkEye]",
-            "type": "url",
-            "url": "https://snigdhalinux.github.io/"
-         } ],
-         "date_added": "13347713518992302",
+         "children": [  ],
+         "date_added": "13350424877801782",
          "date_last_used": "0",
-         "date_modified": "13347713568335717",
+         "date_modified": "0",
          "guid": "82b081ec-3dd3-529c-8475-ab6c344590dd",
          "id": "2",
          "name": "Other bookmarks",
@@ -34,7 +23,7 @@
       },
       "synced": {
          "children": [  ],
-         "date_added": "13347713518992307",
+         "date_added": "13350424877801789",
          "date_last_used": "0",
          "date_modified": "0",
          "guid": "4cf2e351-0e85-532b-bb37-df045d8f8d0f",
