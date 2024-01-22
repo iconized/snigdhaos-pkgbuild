@@ -34,6 +34,7 @@ _install() {
 }
 
 pkgver() {
+
 	cd "$srcdir/$pkgname"
 	printf "r%s.%s" "$(git rev-list --count HEAD)" "$(git rev-parse --short HEAD)"
 
@@ -48,7 +49,7 @@ package_snigdhaos-gnome-config() {
         'catppuccin-gtk-theme-macchiato'
         'bibata-cursor-theme'
         'ttf-droid'
-        'ttf-meslo'
+        'ttf-firacode'
         'ttf-meslo-nerd-font-powerlevel10k'
         'tela-circle-icon-theme-purple'
         )
