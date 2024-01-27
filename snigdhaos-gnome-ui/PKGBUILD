@@ -8,9 +8,9 @@ depends=(
     'snigdhaos-gnome-spec'
     'snigdhaos-gnome-shell'
     'catppuccin-gtk-theme-macchiato'
-    'fluent-icon-theme-git'
-    'bibata-cursor-theme'
+    'tela-circle-icon-theme-green'
     'ttf-firacode'
+    'ttf-meslo-nerd-font-powerlevel10k'
 )
 conflicts=('snigdhaos-gnome-ui-next')
 replaces=('snigdhaos-gnome-ui-next')

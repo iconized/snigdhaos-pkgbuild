@@ -46,11 +46,9 @@ package_snigdhaos-gnome-config() {
         'snigdhaos-gnome-spec'
         'snigdhaos-gnome-shell'
         'snigdhaos-gnome-background'
-        'catppuccin-gtk-theme-macchiato'
+        'snigdhaos-gnome-ui'
         'bibata-cursor-theme'
         'ttf-droid'
-        'ttf-firacode'
-        'ttf-meslo-nerd-font-powerlevel10k'
         'tela-circle-icon-theme-purple'
         )
  
