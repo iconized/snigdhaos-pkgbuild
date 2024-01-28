@@ -1,0 +1,15 @@
+#!/bin/bash
+set -e
+
+SNIGDHAOS_GRAPHICAL="${SNIGDHAOS_GRAPHICAL:-true}"
+if [ -z "$DISPLAY" ]; then
+	SNIGDHAOS_GRAPHICAL=false
+fi
+
+# Elevate
+if [[ $EUID -ne 0 ]] && [ "$SNIGDHAOS_GRAPHICAL" == "true" ]; then
+	exec pkexec /usr/lib/snigdhaos/install-pkgs "$@"
+	exit 1
+fi
+
+sudo pacman -S --noconfirm "$@"
