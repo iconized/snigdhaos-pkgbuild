@@ -1,0 +1,27 @@
+# Maintainer: Eshan Roy <eshan@snigdhaos.org>
+pkgname=snigdhaos-lib
+pkgdesc="Libraries For Snigdha OS"
+pkgver=1
+pkgrel=1
+arch=('any')
+license=('GPL')
+depends=('libnotify' 'expect')
+optdepends=('alacritty' 'lxterminal' 'konsole' 'gnome-terminal' 'xfce4-terminal' 'xterm')
+source=("launch-terminal" "snigdhaos.shlib" "is-snapshot-boot" "install-pkgs" "org.snigdhaos.libs.pkexec.policy" "pkexec-gui")
+sha512sums=('SKIP'
+	'SKIP'
+	'SKIP'
+	'SKIP'
+	'SKIP'
+	'SKIP')
+
+package() {
+	install -Dm755 launch-terminal "$pkgdir"/usr/lib/snigdhaos/launch-terminal
+	install -Dm755 install-software "$pkgdir"/usr/lib/snigdhaos/install-software
+	install -Dm755 is-snapshot-boot "$pkgdir"/usr/lib/snigdhaos/is-snapshot-boot
+	install -Dm755 pkexec-gui "$pkgdir"/usr/lib/snigdhaos/pkexec-gui
+	install -Dm644 garuda.shlib "$pkgdir"/usr/lib/snigdhaos/garuda.shlib
+	install -d "$pkgdir"/var/lib/snigdhaos/tmp
+
+	install -Dm0644 org.snigdhaos.libs.pkexec.policy "$pkgdir/usr/share/polkit-1/actions/org.snigdhaos.libs.pkexec.policy"
+}
