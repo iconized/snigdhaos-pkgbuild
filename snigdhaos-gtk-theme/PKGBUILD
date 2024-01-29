@@ -1,0 +1,22 @@
+# Maintainer: Eshan Roy <eshan@snigdhaos.org>
+
+pkgname=snigdhaos-gtk-theme
+pkgver=0.7.1
+pkgrel=1
+pkgdesc='Soothing pastel theme for GTK3 - Mocha'
+arch=('any')
+license=('GPL3')
+url='https://github.com/catppuccin/gtk'
+source=("snigdhaos-gtk-theme.zip")
+sha256sums=('SKIP')
+
+pkgver() {
+	# cd "${srcdir}"/"${pkgdir}" || exit
+	printf "r%s.%s" "$(git rev-list --count HEAD)" "$(git rev-parse --short HEAD)"
+}
+
+package() {
+	install -d "$pkgdir/usr/share/themes/"
+	cp -r -a --no-preserve=ownership \
+    * "$pkgdir/usr/share/themes"
+}
