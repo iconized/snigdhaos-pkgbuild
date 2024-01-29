@@ -2,7 +2,7 @@
 
 pkgname=snigdhaos-updater
 pkgdesc="The Snigdha OS update command, in a separate package to allow separate updating"
-pkgver=r177.f2902bc
+pkgver=r186.940d539
 pkgrel=1
 arch=('any')
 license=('GPL')
