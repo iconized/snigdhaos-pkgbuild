@@ -59,7 +59,7 @@ pre-update-routines() {
 	install_expect
 }
 
-migrate-garuda-repo() {
+migrate-snigdhaos-repo() {
 	# Add garuda repo if it doesn't exist
 	gawk -i inplace 'BEGIN {
         err=1
