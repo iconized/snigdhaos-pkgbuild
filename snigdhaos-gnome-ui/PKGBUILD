@@ -1,15 +1,17 @@
 # Maintainer Eshan Roy <src.eshan@gmail.com>
 pkgname=snigdhaos-gnome-ui
-pkgver=1
+pkgver=r183.0ded308
 pkgrel=1
 pkgdesc="Snigdha OS Gnome UI"
 arch=('any')
 depends=(
     'snigdhaos-gnome-spec'
     'snigdhaos-gnome-shell'
-    'catppuccin-gtk-theme-macchiato'
-    'tela-circle-icon-theme-green'
+    'snigdhaos-gtk-theme'
+    'bibata-cursor-theme'
+    'tela-circle-icon-theme-purple'
     'ttf-firacode'
+    'ttf-droid'
     'ttf-meslo-nerd-font-powerlevel10k'
 )
 conflicts=('snigdhaos-gnome-ui-next')

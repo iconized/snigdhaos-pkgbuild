@@ -47,9 +47,6 @@ package_snigdhaos-gnome-config() {
         'snigdhaos-gnome-shell'
         'snigdhaos-gnome-background'
         'snigdhaos-gnome-ui'
-        'bibata-cursor-theme'
-        'ttf-droid'
-        'tela-circle-icon-theme-purple'
         )
  
     install=snigdhaos-gnome-config.install
