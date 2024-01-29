@@ -5,7 +5,7 @@ set -e
 minimal_pacman_conf() {
 	local TEMP_CONF
 	TEMP_CONF=$(mktemp)
-	echo -e "[snigdhaos-core]\nServer = https://snigdhalinux.github.io/$repo/$arch" >"$TEMP_CONF"
+	echo -e "[snigdhaos-core]\nServer = https://snigdhalinux.github.io/snigdhaos-core/x86_64" >"$TEMP_CONF"
 	echo "$TEMP_CONF"
 }
 
