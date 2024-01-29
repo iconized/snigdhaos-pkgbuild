@@ -2,7 +2,7 @@
 #Maintainer: Eshan Roy <src.eshan@gmail.com>
 
 pkgname=snigdhaos-brave-config
-pkgver=r87.2647266
+pkgver=r187.96bcc6e
 pkgrel=1
 pkgdesc="Snigdha OS Brave Config."
 arch=('any')
@@ -25,4 +25,4 @@ package() {
   
 }
 sha512sums=('8d747b75a11118604d79267776526b33ee32666e9f6c5f98d3b3b2b27fe0be9fa04131f24488acab4494cd7be90f1226497916dbe9985fc84720d003c688278c'
-            '4485e7ee1a88690e19d90c86db7c8f66cd7942d0be3e2c41f178c3626552606f21fc5c86af3e68752b4f969e1502c9db37940093c9c96d317181455f63e7a189')
+            '4010d75cf7e7a351768ed4a6032076dba361b88130ff9d154760cfa8b19f2492af89ccba5eccac329e48e90770893f001e3a5a825077571fc332153a10cf5387')
