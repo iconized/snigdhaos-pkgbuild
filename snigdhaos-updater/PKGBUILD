@@ -20,6 +20,10 @@ sha512sums=('SKIP'
 	'SKIP'
 	'SKIP'
 	'SKIP')
+pkgver() {
+	# cd "$srcdir/$pkgname"
+	printf "r%s.%s" "$(git rev-list --count HEAD)" "$(git rev-parse --short HEAD)"
+}
 
 package() {
 	install -Dm755 snigdhaos-updater "$pkgdir"/usr/bin/snigdhaos-updater
