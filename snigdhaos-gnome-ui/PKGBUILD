@@ -9,7 +9,7 @@ depends=(
     'snigdhaos-gnome-shell'
     'snigdhaos-gtk-theme'
     'bibata-cursor-theme'
-    'tela-circle-icon-theme-purple'
+    'fluent-icon-theme-git'
     'ttf-firacode'
     'ttf-droid'
     'ttf-meslo-nerd-font-powerlevel10k'
