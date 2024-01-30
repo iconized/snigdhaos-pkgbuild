@@ -1,6 +1,6 @@
 # Maintainer Eshan Roy <src.eshan@gmail.com>
 pkgname=snigdhaos-gnome-ui
-pkgver=r183.0ded308
+pkgver=r197.c8e5391
 pkgrel=1
 pkgdesc="Snigdha OS Gnome UI"
 arch=('any')
