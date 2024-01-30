@@ -1,5 +1,7 @@
 # Maintainer: Eshan Roy <eshan@snigdhaos.org>
-pkgname=snigdhaos-lib
+
+pkgname=snigdhaos-libs
+org=snigdhalinux
 pkgdesc="Libraries For Snigdha OS"
 pkgver=1
 pkgrel=1
