@@ -14,8 +14,8 @@ depends=(
     'ttf-droid'
     'ttf-meslo-nerd-font-powerlevel10k'
 )
-conflicts=('snigdhaos-gnome-ui-next')
-replaces=('snigdhaos-gnome-ui-next')
+conflicts=()
+replaces=()
 
 pkgver() {
 	# cd "$srcdir/$pkgname"
