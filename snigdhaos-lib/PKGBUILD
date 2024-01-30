@@ -16,6 +16,11 @@ sha512sums=('SKIP'
 	'SKIP'
 	'SKIP'
 	'SKIP')
+pkgver() {
+
+	printf "r%s.%s" "$(git rev-list --count HEAD)" "$(git rev-parse --short HEAD)"
+
+}
 
 package() {
 	install -Dm755 launch-terminal "$pkgdir"/usr/lib/snigdhaos/launch-terminal
