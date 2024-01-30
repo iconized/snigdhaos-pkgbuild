@@ -6,7 +6,7 @@ pkgver=3.0
 pkgrel=1
 pkgdesc='Snigdha OS GPG keyring'
 arch=('any')
-url='http:/snigdhaos.org'
+url='http:/snigdhaos.org/'
 license=('GPL')
 install="${pkgname}.install"
 source=('Makefile'
@@ -14,7 +14,7 @@ source=('Makefile'
         'snigdhaos-revoked'
         'snigdhaos-trusted')
 validpgpkeys=(
-        '620564A6B2D6B0917E9182687A2FF6C5C849D5AC'  # eshan
+        'BC45A6C3A12E6EF80FAAA5369F2C5C96FE18E143'  # eshan
               )
 sha256sums=('SKIP'
             'SKIP'
