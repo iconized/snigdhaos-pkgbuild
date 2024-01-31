@@ -1,0 +1,28 @@
+
+#Maintainer: Eshan Roy <src.eshan@gmail.com>
+
+pkgname=snigdhaos-brave-config
+pkgver=r187.96bcc6e
+pkgrel=1
+pkgdesc="Snigdha OS Brave Config."
+arch=('any')
+license=("GPL")
+depends=('snigdhaos-nighttab-config' 'brave-bin' 'gnome-keyring' 'profile-sync-daemon-brave')
+source=("psd.conf"
+        "$pkgname.tar.gz")
+
+pkgver() {
+	# cd "$srcdir/$pkgname" 
+	printf "r%s.%s" "$(git rev-list --count HEAD)" "$(git rev-parse --short HEAD)"
+}
+
+package() {
+  install -dm 755 "${pkgdir}/etc/skel/.config/BraveSoftware"
+  install -dm 755 "${pkgdir}/etc/skel/.config/psd"
+
+  cp -rf "${srcdir}/Brave-Browser" "${pkgdir}/etc/skel/.config/BraveSoftware/"
+  cp -rf "${srcdir}/psd.conf" "${pkgdir}/etc/skel/.config/psd/"  
+  
+}
+sha512sums=('8d747b75a11118604d79267776526b33ee32666e9f6c5f98d3b3b2b27fe0be9fa04131f24488acab4494cd7be90f1226497916dbe9985fc84720d003c688278c'
+            '4010d75cf7e7a351768ed4a6032076dba361b88130ff9d154760cfa8b19f2492af89ccba5eccac329e48e90770893f001e3a5a825077571fc332153a10cf5387')
