@@ -67,6 +67,6 @@ package() {
 
 *Note: If you often build packages then it is better to create an alias in your **.bashrc/config.fish/.zshrc** file. e.g: `alias mpsr=makepkg -f -scr --noconfirm` or `alias sn=gpg --detach-sign` to sign the package*.
 
-Read: [How To Create GPG Key](#)
+Read: ![How To Create GPG Key](https://github.com/snigdhalinux/snigdhaos-pkgbuild/wiki#how-to-create-gpg-key)
 
 
