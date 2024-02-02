@@ -1,7 +1,7 @@
 
 #Maintainer: Eshan Roy <src.eshan@gmail.com>
 
-pkgname=snigdhaos-brave-config-2
+pkgname=snigdhaos-brave-config
 pkgver=r187.96bcc6e
 pkgrel=1
 pkgdesc="Snigdha OS Brave Config."
